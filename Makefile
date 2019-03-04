@@ -1,7 +1,7 @@
 all: xlslib libxlsreader.so
 
 xlslib:lib_src/configure
-	cd ./lib_src && pwd && chmod +x ./configure && ./configure && make && make install && cd ..
+	cd ./lib_src && pwd && -make clean && chmod +x ./configure && ./configure && make && make install && cd ..
 
 libxlsreader.so: src/xlsreader.c
 	gcc -o libxlsreader.so -fpic -shared src/xlsreader.c -I/usr/local/libxls/include -L/usr/local/libxls/lib -lxlsreader
