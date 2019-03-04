@@ -1,5 +1,5 @@
 package = "xls-read"
-version = "scm-1"
+version = "v1.0"
 source = {
     url = "git://github.com/zs-soft/xls-read.git",
     branch = "master"
